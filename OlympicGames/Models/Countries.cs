@@ -1,7 +1,10 @@
-﻿namespace OlympicGames.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OlympicGames.Models
 {
     public class Countries
     {
+        [Key]
         public string CountryID { get; set; }
         public string CountryName { get; set; }
         public Game Game { get; set; }

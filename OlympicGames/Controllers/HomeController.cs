@@ -6,13 +6,11 @@ namespace OlympicGames.Controllers
     public class HomeController : Controller
     {
         private CountryContext context;
+        public HomeController(CountryContext ctx) => context = ctx;
 
-        public HomeController(CountryContext ctx)
-        {
-            context = ctx;
-        }
         public ViewResult Index(CountriesViewModel model)
         {
+         
          model.Categories = context.Categories.ToList();
          model.Games = context.Games.ToList();
 

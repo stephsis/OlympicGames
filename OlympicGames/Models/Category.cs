@@ -1,4 +1,6 @@
-﻿namespace OlympicGames.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OlympicGames.Models
 {
     public class Category
     {

@@ -15,7 +15,7 @@ namespace OlympicGames.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Category>().HasData( new Category { CategoryId = "in", CategoryName = "Indoor"});
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = "in", CategoryName = "Indoor"});
             modelBuilder.Entity<Category>().HasData(new Category { CategoryId = "out", CategoryName = "Outdoor" });
 
             modelBuilder.Entity<Game>().HasData(new Game { GameID = "wint", GameName = "Winter" });
