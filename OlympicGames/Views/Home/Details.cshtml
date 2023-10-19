@@ -18,7 +18,14 @@
             <li class="list-group-item" >
                 <h4>Game: @Model.Game.GameName</h4>
             </li>
-
+            <li class="list-group-team">
+                <form asp-asp-controller="Favorites" asp-action="Add" method="post">
+                    <a asp-action="Index" class="btn btn-primary">Return to Home Page</a>
+                    <button type="submit" class="btn btn-primary">Add to Favorites</button>
+                    <input type="hidden" asp-for="@Model.CountryID"/>
+                    <input type="hidden" asp-for="@Model.GameID"/>
+                </form>
+            </li>
         </ul>
     </div>
 </div>

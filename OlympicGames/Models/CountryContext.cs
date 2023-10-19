@@ -37,7 +37,6 @@ namespace OlympicGames.Models
             modelBuilder.Entity<Countries>().HasData(new Countries { CountryID = "rus", CountryName = "Russia", GameID = "you", CategoryID = "in", FlagImage = "rus.png" });
             modelBuilder.Entity<Countries>().HasData(new Countries { CountryID = "por", CountryName = "Portugal", GameID = "you", CategoryID = "out", FlagImage = "por.png" });
 
-
         }
 
     }
