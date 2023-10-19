@@ -10,6 +10,8 @@ namespace OlympicGames.Models
         public Game Game { get; set; }
         public Category Category { get; set; }
         public string FlagImage { get; set; }
+        public string GameID { get; set; }  
+        public string CategoryID { get; set; }
 
     }
 }

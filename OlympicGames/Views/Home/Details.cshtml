@@ -1,0 +1,24 @@
+﻿@model Countries
+@{
+    ViewData["Title"] = "Country Details"; 
+}
+
+<h2 class="text-center p-2">Country Details</h2>
+
+<div class="row">
+    <div class="col">
+        <ul class="list-group text-center">
+            <li class="list-group-item">
+                <img width="135" height="100" src="~/Images/@Model.FlagImage" alt=""/>
+                <h3>@Model.CountryName</h3>
+            </li>
+            <li class="list-group-item">
+                <h4>Category: @Model.Category.CategoryName</h4>
+            </li>
+            <li class="list-group-item" >
+                <h4>Game: @Model.Game.GameName</h4>
+            </li>
+
+        </ul>
+    </div>
+</div>
