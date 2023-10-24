@@ -2,6 +2,7 @@
 {
     public class CountriesViewModel
     {
+        public Countries Countries { get; set; } = new Countries();
         public string ActiveCat { get; set; } = "all";
         public string ActiveGame { get; set; } = "all";
         public List<Countries>Country { get; set; } = new List<Countries>();
